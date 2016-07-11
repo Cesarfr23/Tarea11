@@ -25,7 +25,9 @@ namespace RegistroPeliculas.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-4ECK98H\\SQLEXPRESS;Initial Catalog=Peliculas;Integrated Secur" +
+            "ity=True")]
         public string Peliculas {
             get {
                 return ((string)(this["Peliculas"]));
