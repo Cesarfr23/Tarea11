@@ -8,7 +8,7 @@ using Entidades;
 
 namespace DAL
 {
-    class PeliculasDb : DbContext
+   public class PeliculasDb : DbContext
     {
         public PeliculasDb() : base("name = Peliculas")
         {
