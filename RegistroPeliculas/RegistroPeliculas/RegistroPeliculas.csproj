@@ -126,9 +126,6 @@
     <None Include="Recursos\1444608937_Save.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\1442105540_Gnome-Edit-Clear-32.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Recursos\1442108658_trash.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

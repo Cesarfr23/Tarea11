@@ -45,7 +45,6 @@
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -193,47 +192,33 @@
             this.comboBox2.Size = new System.Drawing.Size(395, 21);
             this.comboBox2.TabIndex = 19;
             // 
-            // button6
-            // 
-            this.button6.Image = global::RegistroPeliculas.Properties.Resources._1442108658_trash;
-            this.button6.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button6.Location = new System.Drawing.Point(462, 372);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 55);
-            this.button6.TabIndex = 24;
-            this.button6.Text = "Eliminar";
-            this.button6.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button6.UseVisualStyleBackColor = true;
-            // 
             // button5
             // 
-            this.button5.Image = global::RegistroPeliculas.Properties.Resources._1442105540_Gnome_Edit_Clear_32;
             this.button5.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button5.Location = new System.Drawing.Point(353, 372);
+            this.button5.Location = new System.Drawing.Point(431, 372);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(75, 55);
             this.button5.TabIndex = 23;
-            this.button5.Text = "Limpiar";
+            this.button5.Text = "Eliminar";
             this.button5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button5.UseVisualStyleBackColor = true;
             // 
             // button4
             // 
-            this.button4.Image = global::RegistroPeliculas.Properties.Resources._1444608937_Save;
             this.button4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button4.Location = new System.Drawing.Point(245, 372);
+            this.button4.Location = new System.Drawing.Point(300, 372);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 55);
             this.button4.TabIndex = 22;
             this.button4.Text = "Guardar";
             this.button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
-            this.button3.Image = global::RegistroPeliculas.Properties.Resources._1442108330_Modify;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button3.Location = new System.Drawing.Point(141, 372);
+            this.button3.Location = new System.Drawing.Point(167, 372);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 55);
             this.button3.TabIndex = 21;
@@ -243,7 +228,6 @@
             // 
             // button2
             // 
-            this.button2.Image = global::RegistroPeliculas.Properties.Resources._1442108115_Add;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button2.Location = new System.Drawing.Point(36, 372);
             this.button2.Name = "button2";
@@ -255,7 +239,6 @@
             // 
             // button1
             // 
-            this.button1.Image = global::RegistroPeliculas.Properties.Resources._1444609073_search_magnifying_glass_find;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button1.Location = new System.Drawing.Point(434, 33);
             this.button1.Name = "button1";
@@ -270,7 +253,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(580, 453);
-            this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
@@ -324,6 +306,5 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
     }
 }
