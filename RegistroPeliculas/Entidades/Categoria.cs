@@ -11,18 +11,6 @@ namespace Entidades
     {
         [Key]
         public int CategoriaId { get; set; }
-        public string Descricion { get; set; }
-
-        public Categoria()
-        {
-
-        }
-
-        public Categoria(int CategoriaId, string Descripcion)
-        {
-            this.CategoriaId = CategoriaId;
-            this.Descricion = Descripcion;
-
-        }
+        public string Descripcion { get; set; }
     }
 }

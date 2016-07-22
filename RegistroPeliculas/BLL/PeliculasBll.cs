@@ -30,11 +30,11 @@ namespace BLL
             return retorno;
         }
 
-        public static Pelicula Buscar(int IdPeliculas)
+        public static Pelicula Buscar(int PeliculasId)
         {
             var db = new PeliculasDb();
 
-            return db.Pelicula.Find(IdPeliculas);
+            return db.Pelicula.Find(PeliculasId);
         }
 
         public static void Eliminar(int IdPelis)

@@ -19,7 +19,12 @@ namespace RegistroPeliculas
         {
             InitializeComponent();
         }
-
+        private void RegistroPelicula_Load(object sender, EventArgs e)
+        {
+            CategoriaIdComboBox.DataSource = CategoriasBll.GetLista();
+            CategoriaIdComboBox.ValueMember = "CategoriaId";
+            CategoriaIdComboBox.DisplayMember = "Descripcion";
+        }
         private void button4_Click(object sender, EventArgs e)
         {
             LlenarClase(pelicula);
@@ -44,7 +49,7 @@ namespace RegistroPeliculas
             TituloTextBox.Text = pelicula.Titulo;
             SignosisTextBox.Text = pelicula.Signosis;
             CalificacionTextBox.Text = pelicula.Calificacion.ToString();
-            AnnoComboBox.Text = pelicula.Anno.ToString();
+            anoNumericUpDown.Text = pelicula.Anno.ToString();
             IdiomaTextBox.Text = pelicula.Idioma;
             GeneroTextBox.Text = pelicula.Genero;
             CategoriaIdComboBox.Text = pelicula.CategoriaId.ToString();
@@ -56,7 +61,7 @@ namespace RegistroPeliculas
             pelicula.Titulo = TituloTextBox.Text;
             pelicula.Signosis = SignosisTextBox.Text;
             pelicula.Calificacion = StringToInt(CalificacionTextBox.Text);
-            pelicula.Anno = StringToInt(AnnoComboBox.Text);
+            pelicula.Anno = StringToInt(anoNumericUpDown.Text);
             pelicula.Idioma = IdiomaTextBox.Text;
             pelicula.Genero = GeneroTextBox.Text;
             pelicula.CategoriaId = (int)CategoriaIdComboBox.SelectedValue;
@@ -85,5 +90,7 @@ namespace RegistroPeliculas
         {
             LlenarClase(pelicula);
         }
+
+        
     }
 }

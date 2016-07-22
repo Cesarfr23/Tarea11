@@ -44,13 +44,14 @@
             this.CalificacionTextBox = new System.Windows.Forms.TextBox();
             this.IdiomaTextBox = new System.Windows.Forms.TextBox();
             this.GeneroTextBox = new System.Windows.Forms.TextBox();
-            this.AnnoComboBox = new System.Windows.Forms.ComboBox();
             this.CategoriaIdComboBox = new System.Windows.Forms.ComboBox();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.anoNumericUpDown = new System.Windows.Forms.NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)(this.anoNumericUpDown)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -178,16 +179,9 @@
             this.GeneroTextBox.Size = new System.Drawing.Size(395, 20);
             this.GeneroTextBox.TabIndex = 14;
             // 
-            // AnnoComboBox
-            // 
-            this.AnnoComboBox.FormattingEnabled = true;
-            this.AnnoComboBox.Location = new System.Drawing.Point(111, 195);
-            this.AnnoComboBox.Name = "AnnoComboBox";
-            this.AnnoComboBox.Size = new System.Drawing.Size(395, 21);
-            this.AnnoComboBox.TabIndex = 18;
-            // 
             // CategoriaIdComboBox
             // 
+            this.CategoriaIdComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CategoriaIdComboBox.FormattingEnabled = true;
             this.CategoriaIdComboBox.Location = new System.Drawing.Point(111, 298);
             this.CategoriaIdComboBox.Name = "CategoriaIdComboBox";
@@ -259,17 +253,24 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // anoNumericUpDown
+            // 
+            this.anoNumericUpDown.Location = new System.Drawing.Point(111, 197);
+            this.anoNumericUpDown.Name = "anoNumericUpDown";
+            this.anoNumericUpDown.Size = new System.Drawing.Size(395, 20);
+            this.anoNumericUpDown.TabIndex = 24;
+            // 
             // RegistroPelicula
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(580, 453);
+            this.Controls.Add(this.anoNumericUpDown);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.CategoriaIdComboBox);
-            this.Controls.Add(this.AnnoComboBox);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.GeneroTextBox);
             this.Controls.Add(this.IdiomaTextBox);
@@ -288,6 +289,8 @@
             this.Controls.Add(this.label1);
             this.Name = "RegistroPelicula";
             this.Text = "RegistroPelicula";
+            this.Load += new System.EventHandler(this.RegistroPelicula_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.anoNumericUpDown)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -311,11 +314,11 @@
         private System.Windows.Forms.TextBox IdiomaTextBox;
         private System.Windows.Forms.TextBox GeneroTextBox;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ComboBox AnnoComboBox;
         private System.Windows.Forms.ComboBox CategoriaIdComboBox;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.NumericUpDown anoNumericUpDown;
     }
 }
