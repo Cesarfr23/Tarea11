@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegistroPelicula));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -195,6 +196,7 @@
             // 
             // button5
             // 
+            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
             this.button5.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button5.Location = new System.Drawing.Point(431, 372);
             this.button5.Name = "button5";
@@ -207,6 +209,7 @@
             // 
             // button4
             // 
+            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
             this.button4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button4.Location = new System.Drawing.Point(300, 372);
             this.button4.Name = "button4";
@@ -219,6 +222,7 @@
             // 
             // button3
             // 
+            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
             this.button3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button3.Location = new System.Drawing.Point(167, 372);
             this.button3.Name = "button3";
@@ -231,6 +235,7 @@
             // 
             // button2
             // 
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button2.Location = new System.Drawing.Point(36, 372);
             this.button2.Name = "button2";
@@ -243,6 +248,7 @@
             // 
             // button1
             // 
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button1.Location = new System.Drawing.Point(434, 33);
             this.button1.Name = "button1";
