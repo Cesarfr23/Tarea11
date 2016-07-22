@@ -29,5 +29,35 @@ namespace BLL
 
             return retorno;
         }
+
+        public static Pelicula Buscar(int IdPeliculas)
+        {
+            var db = new PeliculasDb();
+
+            return db.Pelicula.Find(IdPeliculas);
+        }
+
+        public static void Eliminar(int IdPelis)
+        {
+            var db = new PeliculasDb();
+
+            Pelicula pelicula = (from pelis in db.Pelicula
+                              where pelis.PeliculasId == IdPelis
+                              select pelis).FirstOrDefault();
+            db.Pelicula.Remove(pelicula);
+            db.SaveChanges();  
+        }
+
+        public static Pelicula Modificar(int IdPelis)
+        {
+            var db = new PeliculasDb();
+
+            Pelicula pelicula = (from pelis in db.Pelicula
+                                 where pelis.PeliculasId == IdPelis
+                                 select pelis).FirstOrDefault();
+            return pelicula;
+        }
     }
+
+   
 }
